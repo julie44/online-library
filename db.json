@@ -1,0 +1,273 @@
+{
+  "books": [
+    {
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe",
+      "pages": "269",
+      "language": "English",
+      "description": "A story of a man in search of truth told with the simple clarity and beauty of Bunyan’s prose make this the ultimate English classic.",
+      "count": "2",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "author": "Hans Christian Andersen",
+      "language": "Danish",
+      "pages": 784,
+      "title": "Fairy tales",
+      "description": "By the end of the 19th century, no book in English literary history had enjoyed more editions, spin-offs and translations. Crusoe’s world-famous novel is a complex literary confection, and it’s irresistible.",
+      "count": 2
+    },
+    {
+      "id": 3,
+      "author": "Dante Alighieri",
+      "language": "Italian",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "description": "A satirical masterpiece that’s never been out of print, Jonathan Swift’s Gulliver’s Travels comes third in our list of the best novels written in English",
+      "count": 3
+    },
+    {
+      "id": 4,
+      "author": "Jane Austen",
+      "language": "English",
+      "pages": 226,
+      "title": "Pride and Prejudice",
+      "description": "Clarissa is a tragic heroine, pressured by her unscrupulous nouveau-riche family to marry a wealthy man she detests, in the book that Samuel Johnson described as “the first book in the world for the knowledge it displays of the human heart.”",
+      "count": 3
+    },
+    {
+      "id": 5,
+      "author": "Honoré de Balzac",
+      "language": "French",
+      "pages": 443,
+      "title": "Le Père Goriot",
+      "description": "Tom Jones is a classic English novel that captures the spirit of its age and whose famous characters have come to represent Augustan society in all its loquacious, turbulent, comic variety.",
+      "count": 1
+    },
+    {
+      "id": 6,
+      "author": "Samuel Beckett",
+      "language": "French, English",
+      "pages": 256,
+      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "description": "Laurence Sterne’s vivid novel caused delight and consternation when it first appeared and has lost little of its original bite.",
+      "count": 1
+    },
+    {
+      "title": "The Decameron",
+      "author": "Giovanni Boccaccio",
+      "pages": 1024,
+      "language": "Italian",
+      "description": "Jane Austen’s Emma is her masterpiece, mixing the sparkle of her early books with a deep sensibility.",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "author": "Jorge Luis Borges",
+      "language": "Spanish",
+      "pages": 224,
+      "title": "Ficciones",
+      "description": "Mary Shelley’s first novel has been hailed as a masterpiece of horror and the macabre.",
+      "count": 7
+    },
+    {
+      "id": 9,
+      "author": "Emily Brontë",
+      "language": "English",
+      "pages": 342,
+      "title": "Wuthering Heights",
+      "description": "The future prime minister displayed flashes of brilliance that equalled the greatest Victorian novelists.",
+      "count": 6
+    },
+    {
+      "id": 10,
+      "author": "Albert Camus",
+      "language": "French",
+      "pages": 185,
+      "title": "The Stranger",
+      "description": "Emily Brontë’s windswept masterpiece is notable not just for its wild beauty but for its daring reinvention of the novel form itself.",
+      "count": 4
+    },
+    {
+      "id": 11,
+      "author": "Paul Celan",
+      "language": "German",
+      "pages": 320,
+      "title": "Poems",
+      "description": "William Thackeray’s masterpiece, set in Regency England, is a bravura performance by a writer at the top of his game.",
+      "count": 5
+    },
+    {
+      "id": 12,
+      "author": "Louis-Ferdinand Céline",
+      "language": "French",
+      "pages": 505,
+      "title": "Journey to the End of the Night",
+      "description": "David Copperfield marked the point at which Dickens became the great entertainer and also laid the foundations for his later, darker masterpieces.",
+      "count": 1
+    },
+    {
+      "id": 13,
+      "author": "Miguel de Cervantes",
+      "language": "Spanish",
+      "pages": 1056,
+      "title": "Don Quijote De La Mancha",
+      "description": "Nathaniel Hawthorne’s astounding book is full of intense symbolism and as haunting as anything by Edgar Allan Poe.",
+      "count": 4
+    },
+    {
+      "id": 14,
+      "author": "Geoffrey Chaucer",
+      "language": "English",
+      "pages": 544,
+      "title": "The Canterbury Tales",
+      "description": "Wise, funny and gripping, Melville’s epic work continues to cast a long shadow over American literature.",
+      "count": 8
+    },
+    {
+      "id": 15,
+      "author": "Anton Chekhov",
+      "language": "Russian",
+      "pages": 194,
+      "title": "Stories",
+      "description": "Lewis Carroll’s brilliant nonsense tale is one of the most influential and best loved in the English canon.",
+      "count": 8
+    },
+    {
+      "id": 16,
+      "author": "Joseph Conrad",
+      "language": "English",
+      "pages": 320,
+      "title": "Nostromo",
+      "description": "Wilkie Collins’s masterpiece, hailed by many as the greatest English detective novel, is a brilliant marriage of the sensational and the realistic.",
+      "count": 3
+    },
+    {
+      "id": 17,
+      "author": "Charles Dickens",
+      "language": "English",
+      "pages": 194,
+      "title": "Great Expectations",
+      "description": "Louisa May Alcott’s highly original tale aimed at a young female market has iconic status in America and never been out of print.",
+      "count": 3
+    },
+    {
+      "id": 18,
+      "author": "Denis Diderot",
+      "language": "French",
+      "pages": 596,
+      "title": "Jacques the Fatalist",
+      "description": "This cathedral of words stands today as perhaps the greatest of the great Victorian fictions.",
+      "count": 5
+    },
+    {
+      "id": 19,
+      "author": "Alfred Döblin",
+      "language": "German",
+      "pages": 600,
+      "title": "Berlin Alexanderplatz",
+      "description": "Inspired by the author’s fury at the corrupt state of England, and dismissed by critics at the time, The Way We Live Now is recognised as Trollope’s masterpiece.",
+      "count": 6
+    },
+    {
+      "id": 20,
+      "author": "Fyodor Dostoevsky",
+      "language": "Russian",
+      "pages": 551,
+      "title": "Crime and Punishment",
+      "description": "Mark Twain’s tale of a rebel boy and a runaway slave seeking liberation upon the waters of the Mississippi remains a defining classic of American literature.",
+      "count": 2
+    },
+    {
+      "id": 21,
+      "author": "Fyodor Dostoevsky",
+      "language": "Russian",
+      "pages": 656,
+      "title": "The Idiot",
+      "description": "A thrilling adventure story, gripping history and fascinating study of the Scottish character, Kidnapped has lost none of its power.",
+      "count": 3
+    },
+    {
+      "id": 22,
+      "author": "Fyodor Dostoevsky",
+      "language": "Russian",
+      "pages": 768,
+      "title": "The Possessed",
+      "description": "Jerome K Jerome’s accidental classic about messing about on the Thames remains a comic gem.",
+      "count": 3
+    },
+    {
+      "id": 23,
+      "author": "Fyodor Dostoevsky",
+      "language": "Russian",
+      "pages": 824,
+      "title": "The Brothers Karamazov",
+      "description": "Sherlock Holmes’s second outing sees Conan Doyle’s brilliant sleuth – and his bluff sidekick Watson – come into their own.",
+      "count": 5
+    },
+    {
+      "id": 24,
+      "author": "George Eliot",
+      "language": "English",
+      "pages": 800,
+      "title": "Middlemarch",
+      "description": "Wilde’s brilliantly allusive moral tale of youth, beauty and corruption was greeted with howls of protest on publication.",
+      "count": 9
+    },
+    {
+      "id": 25,
+      "author": "Ralph Ellison",
+      "language": "English",
+      "pages": 581,
+      "title": "Invisible Man",
+      "description": "George Gissing’s portrayal of the hard facts of a literary life remains as relevant today as it was in the late 19th century.",
+      "count": 3
+    },
+    {
+      "id": 26,
+      "author": "Euripides",
+      "language": "Greek",
+      "pages": 104,
+      "title": "Medea",
+      "description": "Hardy exposed his deepest feelings in this bleak, angry novel and, stung by the hostile response, he never wrote another.",
+      "count": 4
+    },
+    {
+      "id": 27,
+      "author": "William Faulkner",
+      "language": "English",
+      "pages": 313,
+      "title": "Absalom, Absalom!",
+      "description": "Stephen Crane’s account of a young man’s passage to manhood through soldiery is a blueprint for the great American war novel.",
+      "count": 4
+    },
+    {
+      "id": 28,
+      "author": "William Faulkner",
+      "language": "English",
+      "pages": 326,
+      "title": "The Sound and the Fury",
+      "description": "Bram Stoker’s classic vampire story was very much of its time but still resonates more than a century later.",
+      "count": 7
+    },
+    {
+      "id": 29,
+      "author": "Gustave Flaubert",
+      "language": "French",
+      "pages": 528,
+      "title": "Madame Bovary",
+      "description": "Joseph Conrad’s masterpiece about a life-changing journey in search of Mr Kurtz has the simplicity of great myth.",
+      "count": 3
+    },
+    {
+      "id": 30,
+      "author": "Gustave Flaubert",
+      "language": "French",
+      "pages": 606,
+      "title": "Sentimental Education",
+      "description": "Theodore Dreiser was no stylist, but there’s a terrific momentum to his unflinching novel about a country girl’s American dream.",
+      "count": 4
+    }
+  ]
+}
