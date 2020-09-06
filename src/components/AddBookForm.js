@@ -18,7 +18,7 @@ const AddBookForm = ({initialValue = {}, submitHandler, callback, heading, ctaTe
     <div className="addBookForm">
       <p className="addBookTitle">{heading}</p>
       <span className="closeIcon" onClick={callback}>
-        <img src={CloseIcon} />
+        <img src={CloseIcon} alt="close"  />
       </span>
       <form>
         <label>

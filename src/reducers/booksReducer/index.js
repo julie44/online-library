@@ -8,19 +8,21 @@ import {
   ADD_BOOK_ERROR,
   EDIT_BOOK_REQUEST,
   EDIT_BOOK_SUCCESS,
-  EDIT_BOOK_ERROR
+  EDIT_BOOK_ERROR,
+  CLEAR_INLINE_MESSAGE
 } from '../../constants';
 const initialState = {
   isDataPresent:false,
   dataFetching:false,
   dateFetchingError: false,
-  books: []
+  books: [],
+  inlineErrorMsg: '',
+  inlineSuccessMsg: ''
 }
 
 const BookListing = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_ALL_BOOKS_REQUEST: {
-      console.log('FETCH_ALL_BOOKS_REQUEST fired');
       return {
         ...state,
         dataFetching: true,
@@ -29,7 +31,6 @@ const BookListing = (state = initialState, action) => {
       }
     }
     case FETCH_ALL_BOOKS_SUCCESS: {
-      console.log('FETCH_ALL_BOOKS_SUCCESS fired');
       return {
         ...state,
         dataFetching: false,
@@ -39,7 +40,6 @@ const BookListing = (state = initialState, action) => {
       }
     }
     case FETCH_ALL_BOOKS_ERROR: {
-      console.log('FETCH_ALL_BOOKS_ERROR fired');
       return {
         ...state,
         dateFetchingError: true,
@@ -48,19 +48,38 @@ const BookListing = (state = initialState, action) => {
       }
     }
     case ADD_BOOK_SUCCESS: {
-      console.log('ADD_BOOK_SUCCESS fired', action.payload);
       return {
         ...state,
-        books: [...state.books, {...action.payload}]
+        books: [...state.books, {...action.payload}],
+        inlineSuccessMsg: "Book added successfully!!!"
+      }
+    }
+    case ADD_BOOK_ERROR:{
+      return {
+        ...state,
+        inlineErrorMsg: "Unable to add new book. Please try again later"
       }
     }
     case EDIT_BOOK_SUCCESS: {
-      console.log('EDIT_BOOK_SUCCESS fired', action.payload);
       const booksList = state.books.slice();
       const bookToBeUpdatedIndex = booksList.findIndex(book => book.id === action.payload.id);
       return {
         ...state,
-        books: [...state.books.slice(0, bookToBeUpdatedIndex), {...action.payload}, ...state.books.slice(bookToBeUpdatedIndex + 1)]
+        books: [...state.books.slice(0, bookToBeUpdatedIndex), {...action.payload}, ...state.books.slice(bookToBeUpdatedIndex + 1)],
+        inlineSuccessMsg: "Book updated successfully!!!"
+      }
+    }
+    case EDIT_BOOK_ERROR: {
+      return {
+        ...state,
+        inlineErrorMsg: "Unable to edit the book. Please try again later"
+      }
+    }
+    case CLEAR_INLINE_MESSAGE: {
+      return {
+        ...state,
+        inlineErrorMsg: '',
+        inlineSuccessMsg: ''
       }
     }
     default:

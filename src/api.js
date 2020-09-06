@@ -1,13 +1,20 @@
+const fetchStatusHandler = response => {
+  if (response.status >= 200 && response.status < 300) {
+    return response;
+  } else {
+    throw new Error(response.statusText);
+  }
+}
+
 const fetchBooks = () => {
-  // return fetch('http://demo8086586.mockable.io/book-list')
   return fetch('http://localhost:3004/books')
+    .then(fetchStatusHandler)
     .then(response => response.json())
     .then(resp => {
-        // handle the response
         return resp;
     })
     .catch(error => {
-        // handle the error
+        throw new Error(error);
     });
 }
 
@@ -19,13 +26,13 @@ const addBook = payload => {
     },
     body: JSON.stringify(payload)
   })
+    .then(fetchStatusHandler)
     .then(response => response.json())
     .then(resp => {
-        // handle the response
         return resp;
     })
     .catch(error => {
-        // handle the error
+        throw new Error(error);
     });
 }
 
@@ -38,13 +45,13 @@ const editBook = payload => {
     },
     body: JSON.stringify(payload)
   })
+    .then(fetchStatusHandler)
     .then(response => response.json())
     .then(resp => {
-        // handle the response
         return resp;
     })
     .catch(error => {
-        // handle the error
+        throw new Error(error);
     });
 }
 

@@ -7,7 +7,8 @@ import {
   ADD_BOOK_ERROR,
   EDIT_BOOK_REQUEST,
   EDIT_BOOK_SUCCESS,
-  EDIT_BOOK_ERROR
+  EDIT_BOOK_ERROR,
+  CLEAR_INLINE_MESSAGE
 } from '../constants';
 import api from '../api';
 
@@ -60,40 +61,6 @@ export const editBook = payload => dispatch => {
   });
 };
 
-
-/*
-sample action:
-
-export const fetchBooks = (searchStr, journeyType, cityToFilter, tripIndex) => dispatch => {
-  dispatch({
-    type: FETCH_CITIES_REQUEST
-  });
-  api.fetchCities(searchStr).then((resp) => {
-    dispatch({
-      type: FETCH_CITIES_SUCCESS,
-      journeyType,
-      cities: transformCities(resp.response.data.r),
-      allCities: resp.response.data.r,
-      cityToFilter,
-      tripIndex,
-    });
-    if (!isNil(tripIndex)) {
-      dispatch({
-        type: UPDATE_FLT_SEARCH_PARAMS,
-        payload: {
-          journeyType,
-          cities: transformCities(resp.response.data.r),
-          allCities: resp.response.data.r,
-          cityToFilter,
-          tripIndex,
-        }
-      });
-    }
-  }).catch((err) => {
-    dispatch({
-      type: FETCH_CITIES_ERROR,
-      journeyType,
-    });
-  });
-};
-*/
+export const clearInlineMessages = () => ({
+  type: CLEAR_INLINE_MESSAGE
+})

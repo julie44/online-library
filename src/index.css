@@ -84,7 +84,7 @@ p{margin: 0;}
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3)
+  background-color: rgba(0, 0, 0, 0.8)
 }
 
 .modal{
@@ -175,6 +175,7 @@ p{margin: 0;}
   right: 10px;
   width: 10px;
   height: 10px;
+  cursor: pointer;
 }
 .closeIcon img{
   width: 100%;
@@ -190,24 +191,33 @@ p{margin: 0;}
 .editIcon{
   width: 15px;
   height: 15px;
+  cursor: pointer;
+}
+
+.errorMsg{
+  color: #ff0000;
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+.successMsg{
+  color: green;
+  font-size: 14px;
+  margin: 5px 10px;
 }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 640px)  
-  { 
-    .idCol{display: none;}
-    .bookItemSection, .editCol{font-size: 12px;}
-    .bookListHeader{font-size: 11px;}
-    .authorCol{width: 100px;}
-    .langCol{width: 50px;}
-    .searchInput{width: 100%; margin-bottom: 15px;}
-    .searchSection{flex-direction: column;}
-    .bookListWrapper{height: calc(100vh - 150px);}
-    .addBookForm{width: 300px;}
-    .bookItemSection{padding-left: 5px;}
-    .editCol{width: 30px;}
-    .bookListHeader .editCol{margin-left: 5px;}
-    .bookItemSection:hover{
-      background-color: #fff;
-    }
-  }
+@media only screen and (max-width: 640px) { 
+  .idCol{display: none;}
+  .bookItemSection, .editCol{font-size: 12px;}
+  .bookListHeader{font-size: 11px;}
+  .authorCol{width: 100px;}
+  .langCol{width: 50px;}
+  .searchInput{width: 100%; margin-bottom: 15px;}
+  .searchSection{flex-direction: column;}
+  .bookListWrapper{height: calc(100vh - 150px);}
+  .addBookForm{width: 300px;}
+  .bookItemSection{padding-left: 5px;}
+  .editCol{width: 30px;}
+  .bookListHeader .editCol{margin-left: 5px;}
+  .bookItemSection:hover{background-color: #fff;}
+}

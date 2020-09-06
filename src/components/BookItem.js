@@ -31,9 +31,9 @@ const BookItem = ({id, author, title, pages, language, description}) => {
           </div>
           }
         </div>
-        <a href="#" className="editCol" onClick={showModal}>
-          <img src={EditIcon} className="editIcon" />
-        </a>
+        <p className="editCol" onClick={showModal}>
+          <img src={EditIcon} alt="edit" className="editIcon" />
+        </p>
       </div>
       <RenderModal>
         <AddBookForm 
